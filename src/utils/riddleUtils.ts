@@ -3,6 +3,7 @@
 export const riddleClues = [
   "oreinaj ed oir", 
   "oiam ed sert"     
+]; // Added the missing closing bracket and semicolon here
 
 // Hints based on user input
 export interface RiddleResponse {
@@ -41,4 +42,9 @@ export const checkAnswer = (answer: string): RiddleResponse => {
       devourAnimation: true
     };
   }
+};
+
+// Add the missing function to reverse text
+export const reverseText = (text: string): string => {
+  return text.split('').reverse().join('');
 };
