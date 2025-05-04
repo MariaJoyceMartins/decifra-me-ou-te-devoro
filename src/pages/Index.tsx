@@ -75,8 +75,6 @@ const Index = () => {
                 {riddleClues.map((clue, index) => (
                   <p key={index} className="text-xl font-egyptian">
                     <span className="text-egyptian-red">{clue}</span>
-                    <br />
-                    <span className="text-sm text-egyptian-black/70">({reverseText(clue)})</span>
                   </p>
                 ))}
               </div>
