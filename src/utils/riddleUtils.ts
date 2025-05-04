@@ -1,7 +1,7 @@
-
 // Riddle clues (reversed)
 export const riddleClues = [
-  // Clues have been removed
+  "oreinaj ed oir", 
+  "oiam ed sert"     
 ]; 
 
 // Hints based on user input
