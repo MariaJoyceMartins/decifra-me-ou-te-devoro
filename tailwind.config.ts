@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				egyptian: {
+					sand: '#E6CCAB',
+					gold: '#FFD700',
+					red: '#ea384c',
+					black: '#000000e6',
+					papyrus: '#F5ECD9'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,45 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { textShadow: '0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700' },
+					'50%': { textShadow: '0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700' }
+				},
+				'devour': {
+					'0%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' },
+					'100%': { transform: 'scale(1)' }
+				},
+				'fadeIn': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'shake': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-5px)' },
+					'50%': { transform: 'translateX(5px)' },
+					'75%': { transform: 'translateX(-5px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'devour': 'devour 0.5s ease-in-out',
+				'fadeIn': 'fadeIn 1s ease-in-out',
+				'shake': 'shake 0.5s ease-in-out'
+			},
+			fontFamily: {
+				egyptian: ['Papyrus', 'serif'],
+			},
+			backgroundImage: {
+				'sand-pattern': "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\"><rect width=\"100\" height=\"100\" fill=\"%23E6CCAB\" opacity=\"0.3\"/><circle cx=\"10\" cy=\"10\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"30\" cy=\"10\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"50\" cy=\"10\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"70\" cy=\"10\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"90\" cy=\"10\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"20\" cy=\"20\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"40\" cy=\"20\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"60\" cy=\"20\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"80\" cy=\"20\" r=\"1\" fill=\"%23C4AC88\"/><circle cx=\"10\" cy=\"30\" r=\"1\" fill=\"%23C4AC88\"/></svg>')"
 			}
 		}
 	},
