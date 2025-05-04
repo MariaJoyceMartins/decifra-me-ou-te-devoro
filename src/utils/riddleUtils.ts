@@ -1,9 +1,8 @@
 
 // Riddle clues (reversed)
 export const riddleClues = [
-  "oreinaj ed oir", 
-  "oiam ed sert"     
-]; // Added the missing closing bracket and semicolon here
+  // Clues have been removed
+]; 
 
 // Hints based on user input
 export interface RiddleResponse {
