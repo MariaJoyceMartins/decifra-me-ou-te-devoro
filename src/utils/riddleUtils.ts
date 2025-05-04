@@ -43,7 +43,3 @@ export const checkAnswer = (answer: string): RiddleResponse => {
   }
 };
 
-// Add the missing function to reverse text
-export const reverseText = (text: string): string => {
-  return text.split('').reverse().join('');
-};
