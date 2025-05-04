@@ -1,14 +1,8 @@
 
 // Riddle clues (reversed)
 export const riddleClues = [
-  "oreinaj ed oir",  // rio de janeiro (reversed)
-  "oiam ed sert"     // tres de maio (reversed)
-];
-
-// Function to reverse text (to show the riddle properly)
-export const reverseText = (text: string): string => {
-  return text.split('').reverse().join('');
-};
+  "oreinaj ed oir", 
+  "oiam ed sert"     
 
 // Hints based on user input
 export interface RiddleResponse {
